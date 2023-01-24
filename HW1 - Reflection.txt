@@ -10,15 +10,7 @@
 
 3.1: Overall, I felt very mixed about the testing on this first HW. I had some issues using Jest (such as the testing extension not showing up when I started debugging). Before I wrote down any test cases, I decided to test my API directly by using Postman. After that, I decided to try using Mockito, but had trouble doing so since Mockito tests the objects, but here we are directly testing the API calls. Overall, I did not feel like I had a great understanding of what test cases to write. Without any front-end software, writing testing cases felt too simple.
 
-3.2: My tests did not help me find any bugs in my API’s. Most of my API bugs were syntax based, and TS caught them before I even had a chance to test. Once I started using Postman to test my API’s, I able to trace any bugs and resolve them (before writing my test cases).
+3.2: My tests did not help me find any bugs in my API’s. Most of my API bugs were syntax based, and TS caught them before I even had a chance to test. Once I started using Postman to test my API’s, I was able to trace any bugs and resolve them (before writing my test cases). I also used the curl command to test the API.
 
 3.3: In the future, I would like to use a mock framework (that can mock my Interfaces/APIs) with Jest. I was unable to use it right.
 
-
-
-
-
-
-
-also used curl command to test the api
-curl http://localhost:3000/{api name}
