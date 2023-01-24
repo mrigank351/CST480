@@ -1,0 +1,24 @@
+1.1: There are two entities. One being being authors; another being books. For both books and authors, I have seperate API calls that fetch both author and books by their respective ID's. I also haveseperate API calls that fetch all authors and all books from the database.
+
+1.2: There is no front end right now. Therefore, validation is not very fleshed out. The API's I wrote will throw an error if the information being sent to it is written incorrectly (incorrect type, or format). This is the first version of the API. As I start developing the front-end, I will have more chances to test my API calls.
+
+1.3: In this version, I the only field I am searching by is ID, or returning all from the API. I was unable to test all of the different edge cases using unit tests since I could not use any mock interface with Jest. Without a mock interface, the testing becomes a real-time database connection, which is not advisable from a unit-testing perspective (since it should be only testing your code). 
+
+2.1: I did not have any issues creating my API's parameter typs since TS is typesafe. This is great since TS will not allow me to build my program unless the types of each parameter is not correct. For some of my API calls, I used "any" type for request and respose objects.
+
+2.2: TS is new to me, so there was a learing curve for creating a request/resposnse types using interfaces. Overall, I did not have any major issues. 
+
+3.1: Overall, I felt very mixed about the testing on this first HW. I had some issues using Jest (such as the testing extension not showing up when I started debugging). Before I wrote down any test cases, I decided to test my API directly by using Postman. After that, I decided to try using Mockito, but had trouble doing so since Mockito tests the objects, but here we are directly testing the API calls. Overall, I did not feel like I had a great understanding of what test cases to write. Without any front-end software, writing testing cases felt too simple.
+
+3.2: My tests did not help me find any bugs in my API’s. Most of my API bugs were syntax based, and TS caught them before I even had a chance to test. Once I started using Postman to test my API’s, I able to trace any bugs and resolve them (before writing my test cases).
+
+3.3: In the future, I would like to use a mock framework (that can mock my Interfaces/APIs) with Jest. I was unable to use it right.
+
+
+
+
+
+
+
+also used curl command to test the api
+curl http://localhost:3000/{api name}
